@@ -8,15 +8,19 @@ import Menu from './Menu.jsx'
 import Contact from './Contact.jsx'
 import Login from './Login.jsx'
 import Register from './Register.jsx'
+<<<<<<< HEAD
 import AdminLayout from './components/AdminLayout.jsx'
 import Dashboard from './components/admin/Dashboard.jsx'
 import Users from './components/admin/Users.jsx'
 import Reports from './components/admin/Reports.jsx'
 import Settings from './components/admin/Settings.jsx'
+=======
+>>>>>>> a4427a4737d055665333c346d95ecdd4374e46c6
 
 function App() {
   return (
     <div className="app-shell d-flex flex-column min-vh-100">
+<<<<<<< HEAD
       <Routes>
         <Route path="/" element={<><Navbar /><main className="flex-grow-1"><Home /></main><Footer /></>} />
         <Route path="/menu" element={<><Navbar /><main className="flex-grow-1"><Menu /></main><Footer /></>} />
@@ -33,6 +37,21 @@ function App() {
         </Route>
         <Route path="*" element={<><Navbar /><main className="flex-grow-1"><Navigate to="/" replace /></main><Footer /></>} />
       </Routes>
+=======
+      <Navbar />
+      <main className="flex-grow-1">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </main>
+      <Footer />
+>>>>>>> a4427a4737d055665333c346d95ecdd4374e46c6
     </div>
   )
 }
