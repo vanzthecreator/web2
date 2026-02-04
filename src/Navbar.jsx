@@ -76,13 +76,11 @@ export default function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-<<<<<<< HEAD
               <NavLink className={navLinkClass} to="/admin/dashboard">
                 Dashboard
               </NavLink>
             </li>
             <li className="nav-item">
-=======
 >>>>>>> a4427a4737d055665333c346d95ecdd4374e46c6
               <NavLink className={navLinkClass} to="/contact">
                 Contact
