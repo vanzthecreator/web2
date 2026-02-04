@@ -1,0 +1,383 @@
+.app-shell {
+  background: transparent;
+}
+
+/* Navbar */
+.coffee-nav {
+  background: linear-gradient(135deg, var(--coffee-800) 0%, var(--coffee-900) 55%, var(--coffee-950) 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(214, 176, 138, 0.14);
+  border: 1px solid rgba(214, 176, 138, 0.22);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.2px;
+  font-weight: 700;
+}
+
+.navbar-dark .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+  transition: color 160ms ease;
+}
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: rgba(255, 255, 255, 0.98);
+}
+
+/* Buttons */
+.btn-coffee {
+  background: linear-gradient(180deg, var(--coffee-500), var(--coffee-600));
+  color: #fff;
+  border: none;
+  box-shadow: 0 10px 20px rgba(18, 11, 7, 0.18);
+  transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease;
+}
+.btn-coffee:hover {
+  color: #fff;
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 26px rgba(18, 11, 7, 0.22);
+}
+.btn-coffee:active {
+  transform: translateY(0);
+}
+
+/* Hero */
+.coffee-hero {
+  color: rgba(255, 255, 255, 0.94);
+  background:
+    radial-gradient(900px circle at 20% 10%, rgba(214, 176, 138, 0.28) 0%, rgba(214, 176, 138, 0.05) 40%, transparent 60%),
+    radial-gradient(1100px circle at 80% 0%, rgba(139, 94, 60, 0.22) 0%, transparent 55%),
+    linear-gradient(135deg, var(--coffee-800), var(--coffee-950));
+}
+
+.coffee-pill {
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.coffee-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--coffee-300);
+  box-shadow: 0 0 0 5px rgba(214, 176, 138, 0.15);
+}
+
+.coffee-h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  font-size: clamp(2.4rem, 4.3vw, 3.6rem);
+  line-height: 1.05;
+}
+
+.coffee-lead {
+  font-size: 1.1rem;
+  max-width: 58ch;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.coffee-stat {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.07);
+  padding: 0.9rem 1rem;
+}
+.coffee-stat__value {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  font-size: 1.25rem;
+}
+.coffee-stat__label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.92rem;
+}
+
+.coffee-hero-card {
+  border-radius: 22px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-hard);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+}
+.coffee-hero-card__top {
+  padding: 1.25rem 1.25rem 1rem;
+  background: linear-gradient(135deg, #fff8f1 0%, #f1e5d8 100%);
+}
+.coffee-hero-card__badge {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  background: rgba(111, 78, 55, 0.1);
+  color: var(--coffee-700);
+  font-weight: 700;
+}
+.coffee-hero-card__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  margin-top: 0.6rem;
+}
+.coffee-hero-card__sub {
+  color: rgba(43, 31, 22, 0.75);
+}
+.coffee-hero-card__bottom {
+  padding: 1.1rem 1.25rem 1.25rem;
+}
+.coffee-price {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--coffee-800);
+}
+.coffee-divider {
+  height: 1px;
+  margin: 1rem 0;
+  background: rgba(18, 11, 7, 0.08);
+}
+
+.coffee-badge {
+  border: 1px solid rgba(18, 11, 7, 0.08);
+}
+
+/* Sections / cards */
+.coffee-section {
+  position: relative;
+}
+.coffee-section--alt {
+  background: rgba(255, 255, 255, 0.55);
+  border-top: 1px solid rgba(18, 11, 7, 0.06);
+  border-bottom: 1px solid rgba(18, 11, 7, 0.06);
+}
+
+.coffee-eyebrow {
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: rgba(43, 31, 22, 0.6);
+}
+
+.coffee-h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  font-size: clamp(1.6rem, 2.6vw, 2.05rem);
+}
+
+.coffee-card {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+.coffee-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(111, 78, 55, 0.1);
+  border: 1px solid rgba(111, 78, 55, 0.12);
+  color: var(--coffee-700);
+  font-weight: 900;
+  margin-bottom: 0.8rem;
+}
+.coffee-card__title {
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+  color: var(--coffee-800);
+}
+
+.coffee-product {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.15rem;
+  box-shadow: var(--shadow-soft);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.coffee-product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(18, 11, 7, 0.12);
+}
+.coffee-product__name {
+  font-weight: 900;
+  color: var(--coffee-800);
+  margin-bottom: 0.35rem;
+}
+.coffee-product__price {
+  font-weight: 900;
+  color: var(--coffee-700);
+}
+
+/* Page blocks */
+.coffee-page-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  color: var(--coffee-800);
+}
+
+.coffee-panel {
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-soft);
+}
+.coffee-panel__title {
+  font-weight: 900;
+  color: var(--coffee-800);
+}
+.coffee-panel__item {
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(18, 11, 7, 0.07);
+  background: rgba(255, 255, 255, 0.75);
+}
+.coffee-panel__item-title {
+  font-weight: 900;
+  margin-bottom: 0.15rem;
+}
+
+.coffee-note {
+  padding: 1rem 1.1rem;
+  border-radius: var(--radius-lg);
+  background: rgba(139, 94, 60, 0.1);
+  border: 1px solid rgba(139, 94, 60, 0.14);
+  color: rgba(43, 31, 22, 0.85);
+}
+
+.coffee-menu-note {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+  color: rgba(43, 31, 22, 0.7);
+}
+
+.coffee-menu-item {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed rgba(18, 11, 7, 0.12);
+}
+.coffee-menu-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.coffee-menu-item__name {
+  font-weight: 900;
+  color: var(--coffee-800);
+}
+.coffee-menu-item__price {
+  font-weight: 900;
+  color: var(--coffee-700);
+  white-space: nowrap;
+}
+
+.coffee-kv__k {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgba(43, 31, 22, 0.55);
+}
+.coffee-kv__v {
+  font-weight: 600;
+  color: rgba(43, 31, 22, 0.82);
+}
+
+.coffee-cta {
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(18, 11, 7, 0.08);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-soft);
+}
+.coffee-cta__eyebrow {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 0.78rem;
+  color: rgba(43, 31, 22, 0.6);
+  margin-bottom: 0.25rem;
+}
+.coffee-cta__title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  margin-bottom: 0.35rem;
+  color: var(--coffee-800);
+}
+
+.coffee-auth-note {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(43, 31, 22, 0.6);
+}
+
+.footer-link {
+  color: rgba(43, 31, 22, 0.8);
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: rgba(43, 31, 22, 1);
+  text-decoration: underline;
+}
+
+/* Footer */
+.coffee-footer {
+  background: linear-gradient(135deg, var(--coffee-950), var(--coffee-900));
+  color: rgba(255, 255, 255, 0.9);
+}
+.coffee-footer .text-secondary {
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+.coffee-footer .footer-title {
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.92);
+}
+.coffee-footer .footer-link {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+.coffee-footer .footer-link:hover {
+  color: rgba(255, 255, 255, 0.96);
+  text-decoration: underline;
+}
+.brand-mark--footer {
+  width: 34px;
+  height: 34px;
+  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(214, 176, 138, 0.16);
+  border: 1px solid rgba(214, 176, 138, 0.22);
+}
+.brand-name--footer {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}

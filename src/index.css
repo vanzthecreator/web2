@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --coffee-950: #120b07;
+  --coffee-900: #1f140d;
+  --coffee-800: #2b1f16;
+  --coffee-700: #3d2a1d;
+  --coffee-600: #6f4e37;
+  --coffee-500: #8b5e3c;
+  --coffee-300: #d6b08a;
+
+  --cream-50: #fff8f1;
+  --cream-100: #f7efe6;
+  --cream-200: #f1e5d8;
+
+  --radius-lg: 18px;
+  --shadow-soft: 0 10px 30px rgba(18, 11, 7, 0.08);
+  --shadow-hard: 0 14px 50px rgba(18, 11, 7, 0.16);
+
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--coffee-800);
+  background: radial-gradient(1200px circle at 15% 10%, #fff2e1 0%, #f7efe6 45%, #f1e5d8 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(139, 94, 60, 0.25);
+}
