@@ -10,7 +10,9 @@ import Login from './Login.jsx'
 import Register from './Register.jsx'
 <<<<<<< HEAD
 import AdminLayout from './components/AdminLayout.jsx'
-import Dashboard from './components/admin/Dashboard.jsx'
+import Dashboard from './components/admin/Dashboard.jsx'PS C:\Users\CCTC\Documents\web2e\web2-main-vanz-project\web2-main> git commit -m "Your message" 
+On branch main
+nothing to commit, working tree clean
 import Users from './components/admin/Users.jsx'
 import Reports from './components/admin/Reports.jsx'
 import Settings from './components/admin/Settings.jsx'
